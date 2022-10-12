@@ -16,6 +16,14 @@
 /* NAVBAR */
 #navbar{
   display: flex;
+  width: 76%;
+  margin: auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position:  sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 #navbar > div:first-child{
@@ -210,7 +218,7 @@ tr > th {
 }
 
 .decriptionTh {
-  width: 45%;
+  width: 40%;
 }
 
 .savings{
@@ -655,4 +663,54 @@ footer > div:first-child{
 
 #copyRight p{
   margin-left: 13%;
+}
+
+/* PRODUCT QUANTITY  */
+.qtyBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  width: 70px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.btn1, .btn2{
+  border: none;
+  padding: 4px 8px;
+}
+
+.btn1{
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.btn1:hover{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn2{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.btn2:hover{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qtyP{
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.delete{
+  color: gray;
+}
+
+.delete:hover{
+  color: rgb(52, 222, 18);
 }

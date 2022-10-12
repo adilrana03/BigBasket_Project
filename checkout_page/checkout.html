@@ -5,38 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="checkout.css" rel="stylesheet">
+    <link href="response.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dcce0f47df.js" crossorigin="anonymous"></script>
     
   </head>
   <body> 
-    <div id="container">
-      <!-- NAVBAR -->
-      <div id="navbar">
-        <div>
-          <img src="logo.png" alt="logo">
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <div>
+        <img class="logo" src="img/logo.png" alt="logo">
+      </div>
+      <div>
+        <div class="navTopData">
+          <p><i class="fa-solid fa-phone-volume"></i> 1860 123 1000</p>
+          <p><i class="fa-solid fa-location-dot"></i> 560004, Bangalore <i class="fa-solid fa-chevron-down"></i></p>
+          <p><i class="fa-solid fa-user-check"></i> User Name <i class="fa-solid fa-chevron-down"></i></p>
         </div>
-        <div>
-          <div class="navTopData">
-            <p><i class="fa-solid fa-phone-volume"></i> 1860 123 1000</p>
-            <p><i class="fa-solid fa-location-dot"></i> 560004, Bangalore <i class="fa-solid fa-chevron-down"></i></p>
-            <p><i class="fa-solid fa-user-check"></i> User Name <i class="fa-solid fa-chevron-down"></i></p>
-          </div>
 
-          <div>
-            <div class="inputBox">
-              <input type="text" placeholder="Search for products..">
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="basketBox">
-              <img src="basket.png" alt="basket icon">
-              <div>
-                <p>My Basket</p>
-                <p>2 Item</p>
-              </div>
+        <div>
+          <div class="inputBox">
+            <input type="text" placeholder="Search for products..">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="basketBox">
+            <img src="img/basket.png" alt="basket icon">
+            <div>
+              <p>My Basket</p>
+              <p>2 Item</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+
+    <div id="container">
+      
 
       <div class="navBottom">
         <div>
@@ -64,6 +68,7 @@
                 <th>UNIT PRICE</th>
                 <th>QUANTITY</th>
                 <th>SUBTOTAL</th>
+                <th>REMOVE</th>
                 <th class="savings">SAVINGS</th>
               </tr>
             </thead>
@@ -72,8 +77,15 @@
               <tr>
                 <td>onion</td>
                 <td>onion</td>
+                <td>
+                  <div class="qtyBtn">
+                    <button class="btn1">-</button>
+                    <p class="qtyP">1</p>
+                    <button class="btn2">+</button>
+                  </div>
+                </td>
                 <td>onion</td>
-                <td>onion</td>
+                <td class="delete"><i class="fa-sharp fa-solid fa-xmark"></i></td>
                 <td class="savingsTd">onion</td>
               </tr>
               <tr>
@@ -81,6 +93,7 @@
                 <td>onion</td>
                 <td>onion</td>
                 <td>onion</td>
+                <td class="delete"><i class="fa-sharp fa-solid fa-xmark"></i></td>
                 <td class="savingsTd">onion</td>
               </tr>
             </tbody>
@@ -273,11 +286,11 @@
             </div>
             <div>
               <p>
-                Bangalore,Hyderabad,Mumbai,Pune,Chennai,Delhi,Mysore,Madurai,Coimbatore,Vijayawada-Guntur,Kolkata,Ahmedabad-Gandhinagar,Nashik Business,Lucknow-</p>
+                Bangalore,Hyderabad,Mumbai,Pune,Chennai, Delhi,Mysore,Madurai,Coimbatore, Vijayawada-Guntur,Kolkata, Ahmedabad-Gandhinagar,Nashik Business,Lucknow-</p>
             </div>
           </div>
 
-          <p>Kanpur,Gurgaon,Vadodara,Visakhapatnam,Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District,Bhubaneshwar-Cuttack,Guwahati,Renigunta,Hubli,Davanagere,Trichy,Amravati,Raipur,Rajkot,Gwalior,Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural,Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,</p>
+          <p>Kanpur,Gurgaon,Vadodara,Visakhapatnam, Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District, Bhubaneshwar-Cuttack,Guwahati, Renigunta,Hubli,Davanagere,Trichy ,Amravati,Raipur,Rajkot,Gwalior, Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural, Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,</p>
         
           <div class="footerBottomBox">
             <div>
@@ -303,5 +316,7 @@
     <div id="copyRight">
       <p>View Mobile Site | Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd</p>
     </div>
+
+    <script src="checkout.js"></script>
   </body>
 </html>
