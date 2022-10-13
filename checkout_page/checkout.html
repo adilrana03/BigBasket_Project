@@ -19,7 +19,7 @@
         <div class="navTopData">
           <p><i class="fa-solid fa-phone-volume"></i> 1860 123 1000</p>
           <p><i class="fa-solid fa-location-dot"></i> 560004, Bangalore <i class="fa-solid fa-chevron-down"></i></p>
-          <p><i class="fa-solid fa-user-check"></i> User Name <i class="fa-solid fa-chevron-down"></i></p>
+          <p><i class="fa-solid fa-user-check"></i> <span id="userName">User Name</span> <i class="fa-solid fa-chevron-down"></i></p>
         </div>
 
         <div>
@@ -31,7 +31,7 @@
             <img src="img/basket.png" alt="basket icon">
             <div>
               <p>My Basket</p>
-              <p>2 Item</p>
+              <p><span id="basketItems">0</span> Item</p>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
       <!-- BASKET DIV -->
       <div id="basketDiv">
         <div>
-          <h4>Your Basket (<span>02 items</span>)</h4>
+          <h4>Your Basket (<span id="totSpan">0</span> items)</h4>
         </div>
         <button>VIEW AVAILABLE PROMOS</button>
 
@@ -74,9 +74,12 @@
             </thead>
 
             <tbody>
-              <tr>
+              <!-- <tr>
                 <td>onion</td>
-                <td>onion</td>
+                <td class="price">
+                  <p>Onion</p>
+                  <p>Onion</p>
+                </td>
                 <td>
                   <div class="qtyBtn">
                     <button class="btn1">-</button>
@@ -95,15 +98,15 @@
                 <td>onion</td>
                 <td class="delete"><i class="fa-sharp fa-solid fa-xmark"></i></td>
                 <td class="savingsTd">onion</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </div>
 
         <div id="checkoutBoxDiv">
           <div>
-            <button>EMPTY BASKET</button><br>
-            <button>CONTINUE SHOPPING</button>
+            <button id="clearBasket">EMPTY BASKET</button><br>
+            <button><a href="Home_page.html">CONTINUE SHOPPING</a></button>
           </div>
 
           <div>
@@ -118,7 +121,7 @@
               <div>
                 <div>
                   <p class="latoFont">Subtotal</p>
-                  <p class="latoFont id="total">Rs 1458</p>
+                  <p class="latoFont" id="total">0</p>
                 </div>
                 <div>
                   <p>Delivery Charges <i class="fa-solid fa-circle-question"></i></p>
@@ -127,21 +130,21 @@
 
                 <div>
                   <h2>TOTAL</h2>
-                  <h2>Rs 1458</h2>
+                  <h2 id="totalH2">Rs 0</h2>
                 </div>
               </div>
               
               <div>
                 <i class="fa-solid fa-piggy-bank fa-2x"></i>
                 <p>You saved!</p>
-                <p>RS. 382.16</p>
+                <p id="savedP">RS. 0</p>
               </div>
             </div>
 
-            <p>* For this order: Accepted food coupon is Rs. 723.75</p>
+            <p>* For this order: Accepted food coupon is Rs. 30.00</p>
 
             <div class="checkoutBtnDiv">
-              <button>CHECKOUT <i class="fa-solid fa-circle-right"></i></button>
+              <button id="checkBtn">CHECKOUT <i class="fa-solid fa-circle-right"></i></button>
             </div>
             <p>** Actual delivery charges computed at checkout time</p>
           </div>

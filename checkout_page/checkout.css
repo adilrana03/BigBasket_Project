@@ -259,6 +259,11 @@ tr > th {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+#checkoutBoxDiv > div a{
+  text-decoration: none;
+  color: black;
+}
+
 #checkoutBoxDiv > div:nth-child(2){
   width: 15%;
 }
@@ -709,8 +714,19 @@ footer > div:first-child{
 
 .delete{
   color: gray;
+  cursor: pointer;
 }
 
 .delete:hover{
   color: rgb(52, 222, 18);
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+}
+
+.price > p:last-child{
+  font-size: 10px;
+  text-decoration: line-through;
 }
