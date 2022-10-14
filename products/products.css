@@ -15,10 +15,22 @@ body {
     display: flex;
     justify-content: center;
 }
+.nav{
+    position: fixed;
+    background-color: white;
+    margin-bottom: 5%;
+    padding-top: 10px;
+    
+}
+body{
+    margin: 0%;
+}
 
 .nav > .one{
     width:15%;
     height: 100%;
+    
+
 }
 .one>.logo{
     height: 60%;
@@ -448,7 +460,8 @@ ul > li :hover{
 }
 #slide{
     margin-left: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10%;
 }
 #fruits{
 margin-left: 420px;
