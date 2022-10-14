@@ -1,19 +1,9 @@
-// localStorage.setItem("user", "Jithu"); 
 var userName = document.getElementById("userName");
 var name = localStorage.getItem("user") || "USER";
 userName.innerText = name;
 
-// products.map((elem)=> {
-//     elem.qty = 1;
-// });
-
-// var data = [{name: "jithu", price: 300, qty: 1, strike: 400},
-// {name: "sanju", price: 100, qty: 9, strike: 200},
-// {name: "gopi", price: 600, qty:4, strike: 800}];
-
 var tBody = document.querySelector("tbody");
 
-// localStorage.setItem("bigbasket", JSON.stringify(data));
 var products = JSON.parse(localStorage.getItem("bigbasket")) || [];
 
 display(products);
